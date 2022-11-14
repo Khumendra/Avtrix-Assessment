@@ -42,7 +42,10 @@ def index(request):
     return render(request, 'index.html')
 
 
-class FoodSaleViewSet(mixins.RetrieveModelMixin, mixins.ListModelMixin, mixins.UpdateModelMixin,
+class FoodSaleViewSet(mixins.RetrieveModelMixin,
+                      mixins.ListModelMixin,
+                      mixins.UpdateModelMixin,
+                      mixins.CreateModelMixin,
                       viewsets.GenericViewSet):
     queryset = FoodSale.objects.all()
     serializer_class = FoodSaleSerializer
