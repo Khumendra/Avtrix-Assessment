@@ -35,7 +35,7 @@
 ![upload_file](https://user-images.githubusercontent.com/44583461/201731119-c2cf9f6a-525a-4012-8c85-ad3bc2991940.PNG)
 
 
-**6. Upload <kbd>result.xlsx</kbd> file and click on <kbd>API</kbd> or follow `http://127.0.0.1:8000/api/`  link**
+**6. Upload <kbd>result.xlsx</kbd> file and click on <kbd>API</kbd> or follow `<a target="_blank">http://127.0.0.1:8000/api/</a>`  link**
 ![127 0 0 1_8000_api_ (1)](https://user-images.githubusercontent.com/44583461/201734962-c906d817-702d-41fb-b493-bf3fcc9ffad6.png)
 
 **7. Try out the filter functionality**
