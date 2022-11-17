@@ -24,7 +24,8 @@ def index(request):
             return render(request, 'index.html')
 
         imported_data = dataset.load(new_foodsale_data.read(), format='xlsx')
-
+        print(imported_data)
+        print(100*"*")
         for data in imported_data:
             print(data)
             value = FoodSale(
@@ -38,7 +39,12 @@ def index(request):
                 data[7],
 
             )
-            value.save()
+            try:
+                value.save()
+            except:
+                print('None value Found')
+                continue
+                # return render(request, 'index.html')
     return render(request, 'index.html')
 
 
